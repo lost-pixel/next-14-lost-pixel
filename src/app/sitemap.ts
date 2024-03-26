@@ -12,7 +12,7 @@ async function getPages() {
     const posts = await getAllPosts();
 
     const postPages = posts.map((post) => ({
-      url: `${baseUrl}/${post.slug}`,
+      url: `${baseUrl}/posts/${post.slug}`,
       date_modified: post.date,
     }));
 
